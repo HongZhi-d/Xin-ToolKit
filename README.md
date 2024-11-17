@@ -142,5 +142,5 @@ Bilibili: [弘之_](https://space.bilibili.com/1722840466)
 [stars-url]: https://github.com/HongZhi-d/Xin-ToolKit/stargazers
 [issues-shield]: https://img.shields.io/github/issues/HongZhi-d/Xin-ToolKit.svg?style=flat-square
 [issues-url]: https://img.shields.io/github/issues/HongZhi-d/Xin-ToolKit.svg
-[license-shield]: https://img.shields.io/github/license/HongZhi-d/Xin-ToolKit.svg?style=flat-square
+[license-shield]: https://img.shields.io/github/license/HongZhi-d/Xin-ToolKit?style=flat-square
 [license-url]: https://github.com/HongZhi-d/Xin-ToolKit/blob/master/LICENSE
