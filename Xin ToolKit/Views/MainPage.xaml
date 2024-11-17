@@ -38,12 +38,12 @@
                         Padding="0"
                         Content="反馈"
                         FontWeight="Bold"
-                        NavigateUri="http://www.microsoft.com" />
+                        NavigateUri="https://github.com/HongZhi-d/Xin-ToolKit" />
                     <HyperlinkButton
                         Padding="0"
                         Content="GitHub 仓库"
                         FontWeight="Bold"
-                        NavigateUri="http://www.microsoft.com" />
+                        NavigateUri="https://github.com/HongZhi-d/Xin-ToolKit" />
                 </StackPanel>
             </StackPanel>
         </Grid>

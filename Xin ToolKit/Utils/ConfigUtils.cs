@@ -1,11 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Diagnostics;
 using Microsoft.Windows.Storage;
-using Newtonsoft.Json;
 
 namespace Xin_ToolKit.Utils;
 
@@ -21,8 +15,8 @@ internal class ConfigUtils
     public void LoadConfig()
     {
         App.LocalConfig.Plugin_Naraka = ReadConfig<bool>("Plugin_Naraka");
-
-        //Debug.WriteLine("LoadState：" + App.LocalConfig.Plugin_Naraka);
+        App.LocalConfig.NewUser = ReadConfig<bool>("NewUser");
+        Debug.WriteLine("LoadState：" + App.LocalConfig.NewUser);
     }
 
     public void SaveConfig(AppConfig app)
@@ -30,7 +24,8 @@ internal class ConfigUtils
         if (app != null)
         {
             _local.Values["Plugin_Naraka"] = app.Plugin_Naraka;
-            //Debug.WriteLine("SaveState：" + app.Plugin_Naraka);
+            _local.Values["NewUser"] = app.NewUser;
+            Debug.WriteLine("SaveState：" + app.NewUser);
         }
     }
 }
