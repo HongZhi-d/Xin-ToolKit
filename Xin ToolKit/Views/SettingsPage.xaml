@@ -1,0 +1,46 @@
+﻿<Page
+    x:Class="Xin_ToolKit.Views.SettingsPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:controls="using:CommunityToolkit.WinUI.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:fluent="using:FluentIcons.WinUI"
+    xmlns:helpers="using:Xin_ToolKit.Helpers"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Page.Resources>
+        <helpers:EnumToBooleanConverter x:Key="EnumToBooleanConverter" />
+    </Page.Resources>
+    <Grid>
+        <StackPanel x:Name="ContentArea">
+
+            <TextBlock x:Uid="Settings_Personalization" Style="{StaticResource BodyStrongTextBlockStyle}" />
+            <StackPanel Margin="{StaticResource SmallTopBottomMargin}">
+                <controls:SettingsCard
+                    Description="更改应用中显示的颜色"
+                    Header="主题"
+                    HeaderIcon="{fluent:SymbolIcon Symbol=WeatherSunny}">
+
+                    <ComboBox
+                        x:Name="ThemeCombo"
+                        SelectedIndex="{x:Bind ViewModel.GetCurrentThemeIndex}"
+                        SelectionChanged="ComboBox_SelectionChanged">
+                        <ComboBoxItem Content="跟随系统" />
+                        <ComboBoxItem Content="浅色" />
+                        <ComboBoxItem Content="深色" />
+                    </ComboBox>
+                </controls:SettingsCard>
+            </StackPanel>
+
+            <TextBlock x:Uid="Settings_About" Style="{StaticResource BodyStrongTextBlockStyle}" />
+            <StackPanel Margin="{StaticResource XSmallTopMargin}">
+                <controls:SettingsCard Description="© 2024 弘之 All rights reserved." Header="Xin Toolkit">
+                    <controls:SettingsCard.HeaderIcon>
+                        <ImageIcon Source="/Assets/logo_png.png" />
+                    </controls:SettingsCard.HeaderIcon>
+                    <TextBlock Foreground="{ThemeResource TextFillColorSecondaryBrush}" Text="Version 1.0.0" />
+                </controls:SettingsCard>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Page>

@@ -1,0 +1,208 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AppDisplayName" xml:space="preserve">
+    <value>Xin ToolKit</value>
+  </data>
+  <data name="AppDescription" xml:space="preserve">
+    <value>Xin ToolKit</value>
+  </data>
+  <data name="Shell_Main.Content" xml:space="preserve">
+    <value>主页</value>
+  </data>
+  <data name="Settings_Personalization.Text" xml:space="preserve">
+    <value>外观</value>
+  </data>
+  <data name="Settings_About.Text" xml:space="preserve">
+    <value>关于</value>
+  </data>
+  <data name="Shell_Plugin.Content" xml:space="preserve">
+    <value>插件</value>
+  </data>
+  <data name="AgreementDetail" xml:space="preserve">
+    <value>
+### 欢迎使用 Xin ToolKit（以下简称“本软件”）
+在使用本软件前，请仔细阅读以下条款。通过下载、安装、使用本软件，您即表示同意接受&gt;本协议的所有条款和条件。如果您不同意本协议的任何条款，请不要下载、安装或使用本软件。
+&lt;br/&gt;
+
+### 1. 协议的接受
+本协议是您与作者之间关于您使用本软件的法律协议。本协议适用于本软件的所有版本，包括任何升级、更新或增强版本。
+&lt;br/&gt;
+
+### 1. 软件许可
+作者授予您个人、非独家、不可转让的许可，以安装和使用本软件。您同意不出售、出租、转让、分发、复制或以任何形式再授权本软件。
+&lt;br/&gt;
+
+### 3. 软件的所有权和知识产权
+本软件及其所有副本和衍生作品的所有权和知识产权均归作者所有。本软件受版权法和国际版权条约的保护。您不得以任何方式侵犯作者的知识产权，包括但不限于版权、商标、专利或其他专有权利。
+&lt;br/&gt;
+
+### 4. 使用限制
+您不得：
+- 反向工程、反编译或以其他方式尝试从本软件中提取源代码。
+- 修改、创建衍生作品、翻译或制作本软件的部分或全部的副本。
+- 移除、隐藏或更改本软件中的任何版权声明、商标或其他专有权利声明。
+- 以任何方式使用本软件，包括但不限于任何非法目的。
+- 将本软件用于任何商业目的，除非获得作者的明确书面授权。
+&lt;br/&gt;
+
+### 5. 转载和分享
+- 您理解并同意，在使用本软件过程中产生的任何内容，包括但不限于文本、图像、音频或视频（以下简称“用户内容”），您对该用户内容拥有所有权或已获得相应的授权。
+- 您同意，任何形式的转载或分享本软件的用户内容，无论是商业性质还是非商业性质，都必须事先获得作者的明确书面授权。
+- 未经作者书面授权，您不得以任何方式转载或分享用户内容，包括但不限于通过互联网、社交媒体、印刷出版物或其他任何媒介。
+&lt;br/&gt;
+
+### 6. 软件更新
+作者可能会不时提供软件更新，包括新功能、软件改进、错误修复等。这些更新可能需要您手动下载和安装。您可以选择是否接受这些更新，但请注意，某些功能可能需要最新版本的软件才能正常工作。作者将通过软件界面或官方网站通知您可用的更新。
+&lt;br/&gt;
+
+### 7. 免责声明
+本软件及其相关文档按“现状”提供，不包含任何形式的明示或暗示的保证，包括但不限于适销性、特定用途适用性或非侵权性的保证。作者不保证本软件将满足您的需求，也不保证本软件的运行将无中断或无错误。
+&lt;br/&gt;
+
+### 8. 责任限制
+在任何情况下，作者不对任何直接、间接、特殊、偶然、惩罚性或后果性损害负责，包括但不限于利润损失、业务中断、商业信息丢失或其他任何形式的损害，无论这些损害是基于合同责任、侵权行为还是其他原因。
+&lt;br/&gt;
+
+### 9. 协议的修改
+作者保留随时修改本协议的权利。作者将通过本软件或官方网站通知用户协议的修改。您继续使用本软件将被视为对修改后的协议的接受。如果您不同意修改后的协议，您应停止使用本软件。
+&lt;br/&gt;
+
+### 10. 协议的终止
+如果您违反本协议的任何条款，作者有权立即终止本协议，并停止您使用本软件的权利。作者还保留在任何时候因任何原因终止本协议的权利。
+&lt;br/&gt;
+
+### 11. 法律适用和争议解决
+本协议的解释、效力和执行受中华人民共和国法律管辖。任何因本协议引起的争议，双方应首先通过友好协商解决；协商不成时，任何一方均可向作者所在地的有管辖权的人民法院提起诉讼。
+&lt;br/&gt;
+
+### 12. 完整协议
+本协议构成双方关于本软件使用的全部协议，并取代之前的所有口头或书面协议。
+&lt;br/&gt;
+
+### 13. 其他
+- 本协议中的任何条款若因法律、法规或其他原因被认定为无效或不可执行，不影响其他条款的有效性和可执行性。
+- 本协议的任何修改和补充均需以书面形式作出，并经双方同意后生效。
+&lt;br/&gt;
+
+### 14. 兼容性和支持
+作者努力确保软件更新的兼容性，但您理解并同意，更新可能不总是与旧版本的软件或第三方软件兼容。作者不保证对旧版本软件的持续支持或更新。
+&lt;br/&gt;</value>
+  </data>
+</root>

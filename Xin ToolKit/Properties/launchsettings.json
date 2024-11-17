@@ -1,0 +1,10 @@
+﻿{
+  "profiles": {
+    "Xin ToolKit (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "Xin ToolKit (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
