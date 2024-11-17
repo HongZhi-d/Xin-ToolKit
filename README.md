@@ -125,7 +125,7 @@ Bilibili: [弘之_](https://space.bilibili.com/1722840466)
 
 ### 版权说明
 
-该项目签署了MIT 授权许可，详情请参阅 [LICENSE.txt](https://github.com/HongZhi-d/Xin-ToolKit/LICENSE)
+该项目签署了MIT 授权许可，详情请参阅 [LICENSE.txt](https://github.com/HongZhi-d/Xin-ToolKit/blob/master/LICENSE)
 
 ### 鸣谢
 
@@ -143,5 +143,5 @@ Bilibili: [弘之_](https://space.bilibili.com/1722840466)
 [issues-shield]: https://img.shields.io/github/issues/HongZhi-d/Xin-ToolKit.svg?style=flat-square
 [issues-url]: https://img.shields.io/github/issues/HongZhi-d/Xin-ToolKit.svg
 [license-shield]: https://img.shields.io/github/license/HongZhi-d/Xin-ToolKit.svg?style=flat-square
-[license-url]: https://github.com/HongZhi-d/Xin-ToolKit/LICENSE
+[license-url]: https://github.com/HongZhi-d/Xin-ToolKit/blob/master/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
