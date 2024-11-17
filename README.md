@@ -144,4 +144,3 @@ Bilibili: [弘之_](https://space.bilibili.com/1722840466)
 [issues-url]: https://img.shields.io/github/issues/HongZhi-d/Xin-ToolKit.svg
 [license-shield]: https://img.shields.io/github/license/HongZhi-d/Xin-ToolKit.svg?style=flat-square
 [license-url]: https://github.com/HongZhi-d/Xin-ToolKit/blob/master/LICENSE
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
