@@ -1,14 +1,10 @@
-﻿using Windows.Storage;
-using Windows.Storage.Pickers;
-using Windows.Storage.Streams;
-
-namespace Xin_ToolKit.Utils;
+﻿namespace Xin_ToolKit.Utils;
 
 internal class DownloadUtils
 {
-    public static async Task<bool> DownLoadAsync(string uri, string localFileName)
+    public static async Task<bool> DownLoadAsync(string? uri, string localFileName)
     {
-        var server = new Uri(uri);
+        var server = new Uri(uri!);
         var path = Path.GetDirectoryName(localFileName);
         if (path != null)
         {

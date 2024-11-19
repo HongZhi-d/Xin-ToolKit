@@ -1,12 +1,10 @@
-﻿using System.Diagnostics;
-using CommunityToolkit.Mvvm.ComponentModel;
+﻿using CommunityToolkit.Mvvm.ComponentModel;
 using Microsoft.UI.Xaml.Media.Imaging;
 
 namespace Xin_ToolKit.ViewModels;
 
 public partial class MainViewModel : ObservableRecipient
 {
-
     [ObservableProperty]
     private BitmapImage bitmapImage;
 
@@ -16,7 +14,7 @@ public partial class MainViewModel : ObservableRecipient
     public MainViewModel()
     {
         Random random = new();
-        imageUri = "https://www.loliapi.com/acg/pc/?id=" + random.Next(1,699);
+        imageUri = "https://www.loliapi.com/acg/pc/?id=" + random.Next(1, 699);
         bitmapImage = SetNetworkImageAsBackground(imageUri);
     }
 

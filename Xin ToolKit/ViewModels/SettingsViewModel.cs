@@ -23,6 +23,12 @@ public partial class SettingsViewModel : ObservableRecipient
     [ObservableProperty]
     private string _versionDescription;
 
+    [ObservableProperty]
+    private string? _pictureSavePath;
+
+    [ObservableProperty]
+    private int _defaultSavePath;
+
     public ICommand SwitchThemeCommand
     {
         get;
@@ -48,6 +54,9 @@ public partial class SettingsViewModel : ObservableRecipient
                     await _themeSelectorService.SetThemeAsync(param);
                 }
             });
+
+        _defaultSavePath = App.LocalConfig.DefaultSavePath;
+        _pictureSavePath = App.LocalConfig.PictureSavePath;
     }
 
     private static string GetVersionDescription()

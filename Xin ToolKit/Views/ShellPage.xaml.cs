@@ -17,13 +17,18 @@ public sealed partial class ShellPage : Page
         get;
     }
 
-    public MainViewModel MainViewModel { get; }
+    public MainViewModel MainViewModel
+    {
+        get;
+    }
 
     public ShellPage(ShellViewModel viewModel)
     {
         ViewModel = viewModel;
         MainViewModel = App.GetService<MainViewModel>();
         InitializeComponent();
+
+        App.LocalConfig.PublicImgUri = MainViewModel.ImageUri;
 
         ViewModel.NavigationService.Frame = NavigationFrame;
         ViewModel.NavigationViewService.Initialize(NavigationViewControl);
