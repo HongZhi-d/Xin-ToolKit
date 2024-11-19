@@ -1,8 +1,6 @@
-﻿using System.ComponentModel.DataAnnotations;
-using Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.UI.Xaml;
-using Windows.Foundation;
 using WinUIEx;
 using Xin_ToolKit.Activation;
 using Xin_ToolKit.Contracts.Services;
@@ -10,7 +8,6 @@ using Xin_ToolKit.Core.Contracts.Services;
 using Xin_ToolKit.Core.Services;
 using Xin_ToolKit.Models;
 using Xin_ToolKit.Services;
-using Xin_ToolKit.Utils;
 using Xin_ToolKit.ViewModels;
 using Xin_ToolKit.Views;
 
@@ -98,7 +95,7 @@ public partial class App : Application
         // TODO: Log and handle exceptions as appropriate. https://docs.microsoft.com/windows/windows-app-sdk/api/winrt/microsoft.ui.xaml.application.unhandledexception.
     }
 
-    protected async override void OnLaunched(LaunchActivatedEventArgs args)
+    protected override async void OnLaunched(LaunchActivatedEventArgs args)
     {
         MainWindow = new MainWindow();
 

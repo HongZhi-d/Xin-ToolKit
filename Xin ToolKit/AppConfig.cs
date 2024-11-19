@@ -22,10 +22,30 @@ public partial record AppConfig
     {
         get; set;
     }
+
     public string? Password
     {
         get; set;
     }
 
     #endregion 用户设置
+
+    #region 其他设置
+
+    public int DefaultSavePath
+    {
+        get; set;
+    } = 0;
+
+    public string? PictureSavePath
+    {
+        get; set;
+    }
+
+    public string? PublicImgUri
+    {
+        get; set;
+    }
+
+    #endregion 其他设置
 }

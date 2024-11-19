@@ -2,11 +2,10 @@
 <UserControl
     x:Class="Xin_ToolKit.Custom.AgreementDialog"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:local="using:Xin_ToolKit.Custom"
-    xmlns:markdowntextblock="using:CommunityToolkit.Labs.WinUI.MarkdownTextBlock"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:markdowntextblock="using:CommunityToolkit.Labs.WinUI.MarkdownTextBlock"
     Loaded="UserControl_Loaded"
     mc:Ignorable="d">
 
@@ -23,5 +22,4 @@
             Content="已阅读并同意本协议"
             IsChecked="{x:Bind Agree, Mode=TwoWay}" />
     </Grid>
-
 </UserControl>

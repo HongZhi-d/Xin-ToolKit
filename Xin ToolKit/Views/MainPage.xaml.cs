@@ -1,16 +1,11 @@
-﻿using Microsoft.UI.Xaml.Controls;
+﻿using System.Diagnostics;
+using Microsoft.UI.Xaml;
+using Microsoft.UI.Xaml.Controls;
 using Windows.Storage;
-using Microsoft.Windows.Storage;
+using Windows.System;
+using Xin_ToolKit.Utils;
 using Xin_ToolKit.ViewModels;
 using ApplicationData = Microsoft.Windows.Storage.ApplicationData;
-using Xin_ToolKit.Utils;
-using Microsoft.UI.Xaml;
-using System.IO.Compression;
-using Windows.System;
-using System.Diagnostics;
-using Xin_ToolKit.Custom;
-using Windows.Foundation.Metadata;
-using Microsoft.UI.Xaml.Markup;
 
 namespace Xin_ToolKit.Views;
 
@@ -50,7 +45,7 @@ public sealed partial class MainPage : Page
 
     private void AgreementDialog_CloseButtonClick(ContentDialog sender, ContentDialogButtonClickEventArgs args)
     {
-         Process.GetCurrentProcess().Kill();
+        Process.GetCurrentProcess().Kill();
     }
 
     private async void MenuFlyoutItem_Click(object sender, Microsoft.UI.Xaml.RoutedEventArgs e)
@@ -89,6 +84,4 @@ public sealed partial class MainPage : Page
             await dialog.ShowAsync();
         }
     }
-
-
 }

@@ -1,12 +1,9 @@
-
-using System.Diagnostics;
-using CommunityToolkit.Mvvm.ComponentModel;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using Microsoft.Windows.ApplicationModel.Resources;
-using Xin_ToolKit.ViewModels;
 
 namespace Xin_ToolKit.Custom;
+
 public sealed partial class AgreementDialog : UserControl
 {
     public bool Agree

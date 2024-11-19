@@ -1,9 +1,7 @@
 ﻿using System.Diagnostics;
-using System.Reflection;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using Xin_ToolKit.Custom;
-using Xin_ToolKit.Utils;
 using Xin_ToolKit.ViewModels;
 
 namespace Xin_ToolKit.Views;
@@ -67,7 +65,5 @@ public sealed partial class PluginPage : Page
         };
 
         await dialog.ShowAsync();
-        ConfigUtils configUtils = new();
-        configUtils.SaveConfig(App.LocalConfig);
     }
 }

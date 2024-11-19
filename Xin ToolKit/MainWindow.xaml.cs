@@ -1,8 +1,6 @@
 ﻿using Microsoft.UI.Xaml;
-using Microsoft.UI.Xaml.Controls;
-using Windows.Foundation;
-using Windows.Foundation.Metadata;
 using Windows.UI.ViewManagement;
+using Windows.UI.WindowManagement;
 using WinUIEx;
 using Xin_ToolKit.Helpers;
 using Xin_ToolKit.Utils;
