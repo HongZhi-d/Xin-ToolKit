@@ -1,11 +1,11 @@
 ﻿<Page
     x:Class="Xin_ToolKit.Views.MainPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:fluent="using:FluentIcons.WinUI"
     xmlns:custom="using:Xin_ToolKit.Custom"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:fluent="using:FluentIcons.WinUI"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:viewmodels="using:Xin_ToolKit.ViewModels"
     d:DataContext="{d:DesignInstance Type=viewmodels:MainViewModel}"
     NavigationCacheMode="Enabled"
@@ -21,6 +21,7 @@
                     <Image.ContextFlyout>
                         <MenuFlyout>
                             <MenuFlyoutItem
+                                x:Name="MenuFlyoutItem_Menu"
                                 Click="MenuFlyoutItem_Click"
                                 Icon="{fluent:SymbolIcon Symbol=Save}"
                                 Text="保存" />

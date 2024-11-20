@@ -50,8 +50,9 @@ public sealed partial class MainPage : Page
 
     private async void MenuFlyoutItem_Click(object sender, Microsoft.UI.Xaml.RoutedEventArgs e)
     {
+        MenuFlyoutItem_Menu.IsEnabled = false;
         var path = storageFolder.Path + "/Photo/";
-        var data = path + "image_" + DateTime.Now.ToString("yyyy-MM-dd-HH-mm-ss") + ".png";
+        var data = path + "image_" + DateTime.Now.ToString("yyyy-MM-dd-HH-mm-ss") + ".webp";
         var result = await DownloadUtils.DownLoadAsync(ViewModel.ImageUri, data);
         if (result)
         {
@@ -62,13 +63,15 @@ public sealed partial class MainPage : Page
                 Content = "照片下载成功！",
                 PrimaryButtonText = "查看照片",
                 CloseButtonText = "取消",
-                DefaultButton = ContentDialogButton.Primary
+                DefaultButton = ContentDialogButton.Primary,
+                RequestedTheme = ((FrameworkElement)sender).ActualTheme
             };
             dialog.PrimaryButtonClick += async (s, args) =>
             {
                 await Launcher.LaunchFolderAsync(storageFolder);
             };
             await dialog.ShowAsync();
+            MenuFlyoutItem_Menu.IsEnabled = true;
         }
         else
         {
@@ -79,9 +82,11 @@ public sealed partial class MainPage : Page
                 Content = "图片下载失败！",
                 PrimaryButtonText = "确认",
                 CloseButtonText = "取消",
-                DefaultButton = ContentDialogButton.Primary
+                DefaultButton = ContentDialogButton.Primary,
+                RequestedTheme = ((FrameworkElement)sender).ActualTheme
             };
             await dialog.ShowAsync();
+            MenuFlyoutItem_Menu.IsEnabled = true;
         }
     }
 }

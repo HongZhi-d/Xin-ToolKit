@@ -125,7 +125,8 @@ public sealed partial class SettingsPage : Page
 
     private async void SavePicture_Click(object sender, RoutedEventArgs e)
     {
-        var data = DefaultSavePath_edit.Text + "image_" + DateTime.Now.ToString("yyyy-MM-dd-HH-mm-ss") + ".png";
+        SavePicture_Button.IsEnabled = false;
+        var data = DefaultSavePath_edit.Text + "image_" + DateTime.Now.ToString("yyyy-MM-dd-HH-mm-ss") + ".webp";
         Debug.WriteLine(App.LocalConfig.PublicImgUri);
         var result = await DownloadUtils.DownLoadAsync(App.LocalConfig.PublicImgUri, data);
         if (result)
@@ -137,7 +138,8 @@ public sealed partial class SettingsPage : Page
                 Content = "照片下载成功！",
                 PrimaryButtonText = "查看照片",
                 CloseButtonText = "取消",
-                DefaultButton = ContentDialogButton.Primary
+                DefaultButton = ContentDialogButton.Primary,
+                RequestedTheme = ((FrameworkElement)sender).ActualTheme
             };
             dialog.PrimaryButtonClick += async (s, args) =>
             {
@@ -151,6 +153,7 @@ public sealed partial class SettingsPage : Page
                 }
             };
             await dialog.ShowAsync();
+            SavePicture_Button.IsEnabled = true;
         }
         else
         {
@@ -161,9 +164,11 @@ public sealed partial class SettingsPage : Page
                 Content = "图片下载失败！",
                 PrimaryButtonText = "确认",
                 CloseButtonText = "取消",
-                DefaultButton = ContentDialogButton.Primary
+                DefaultButton = ContentDialogButton.Primary,
+                RequestedTheme = ((FrameworkElement)sender).ActualTheme
             };
             await dialog.ShowAsync();
+            SavePicture_Button.IsEnabled = true;
         }
     }
 }
