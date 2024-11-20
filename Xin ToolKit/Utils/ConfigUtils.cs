@@ -15,10 +15,10 @@ internal class ConfigUtils
     public void LoadConfig()
     {
         App.LocalConfig.Plugin_Naraka = ReadConfig<bool>("Plugin_Naraka");
-        App.LocalConfig.NewUser = ReadConfig<bool>("NewUser");
+        App.LocalConfig.OldUser = ReadConfig<bool>("OldUser");
         App.LocalConfig.PictureSavePath = ReadConfig<string>("PictureSavePath");
         App.LocalConfig.DefaultSavePath = ReadConfig<int>("DefaultSavePath");
-        Debug.WriteLine("LoadState：" + App.LocalConfig.DefaultSavePath);
+        Debug.WriteLine("LoadState：" + App.LocalConfig.Plugin_Naraka);
         Debug.WriteLine("LoadPath：" + App.LocalConfig.PictureSavePath);
     }
 
@@ -28,7 +28,7 @@ internal class ConfigUtils
         {
             // 布尔值
             _local.Values["Plugin_Naraka"] = app.Plugin_Naraka;
-            _local.Values["NewUser"] = app.NewUser;
+            _local.Values["OldUser"] = app.OldUser;
 
             // 整数
             _local.Values["DefaultSavePath"] = app.DefaultSavePath;
@@ -36,7 +36,7 @@ internal class ConfigUtils
             // 字符
             _local.Values["PictureSavePath"] = app.PictureSavePath;
 
-            Debug.WriteLine("LoadState：" + App.LocalConfig.DefaultSavePath);
+            Debug.WriteLine("LoadState：" + App.LocalConfig.Plugin_Naraka);
             Debug.WriteLine("LoadPath：" + App.LocalConfig.PictureSavePath);
         }
     }

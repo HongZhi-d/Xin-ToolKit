@@ -13,10 +13,10 @@ public partial record AppConfig
 
     #region 用户设置
 
-    public bool NewUser
+    public bool OldUser
     {
         get; set;
-    } = true;
+    }
 
     public string? UserName
     {

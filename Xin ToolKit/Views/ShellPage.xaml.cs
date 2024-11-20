@@ -1,4 +1,5 @@
-﻿using Microsoft.UI.Xaml;
+﻿using System.Diagnostics;
+using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Input;
 
@@ -37,6 +38,31 @@ public sealed partial class ShellPage : Page
         App.MainWindow.SetTitleBar(AppTitleBar);
         App.MainWindow.Activated += MainWindow_Activated;
         AppTitleBarText.Text = "AppDisplayName".GetLocalized();
+
+        var ShellPageRoot = Content as FrameworkElement;
+        if (ShellPageRoot != null)
+        {
+            ShellPageRoot.Loaded += async (s, e) => await CheckUseState();
+        }
+    }
+
+    private async Task CheckUseState()
+    {
+        var isNew = App.LocalConfig.OldUser;
+        if (!isNew)
+        {
+            await AgreementDialog.ShowAsync();
+        }
+    }
+
+    private void AgreementDialog_PrimaryButtonClick(ContentDialog sender, ContentDialogButtonClickEventArgs args)
+    {
+        App.LocalConfig.OldUser = true;
+    }
+
+    private void AgreementDialog_CloseButtonClick(ContentDialog sender, ContentDialogButtonClickEventArgs args)
+    {
+        Process.GetCurrentProcess().Kill();
     }
 
     private void OnLoaded(object sender, Microsoft.UI.Xaml.RoutedEventArgs e)

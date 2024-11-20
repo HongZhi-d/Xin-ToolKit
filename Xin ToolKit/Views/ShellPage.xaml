@@ -2,6 +2,7 @@
     x:Class="Xin_ToolKit.Views.ShellPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:custom="using:Xin_ToolKit.Custom"
     xmlns:helpers="using:Xin_ToolKit.Helpers"
     Loaded="OnLoaded">
 
@@ -65,5 +66,17 @@
                 <Frame x:Name="NavigationFrame" />
             </Grid>
         </NavigationView>
+        <ContentDialog
+            x:Name="AgreementDialog"
+            Title="用户协议"
+            CloseButtonClick="AgreementDialog_CloseButtonClick"
+            CloseButtonText="拒绝并退出"
+            DefaultButton="Primary"
+            IsPrimaryButtonEnabled="{x:Bind Agreement.Agree, Mode=OneWay}"
+            PrimaryButtonClick="AgreementDialog_PrimaryButtonClick"
+            PrimaryButtonText="同意并进入"
+            RequestedTheme="{x:Bind ActualTheme}">
+            <custom:AgreementDialog x:Name="Agreement" />
+        </ContentDialog>
     </Grid>
 </Page>

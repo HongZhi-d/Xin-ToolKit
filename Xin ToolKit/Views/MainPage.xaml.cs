@@ -22,30 +22,6 @@ public sealed partial class MainPage : Page
     {
         ViewModel = App.GetService<MainViewModel>();
         InitializeComponent();
-        var MainPageRoot = Content as FrameworkElement;
-        if (MainPageRoot != null)
-        {
-            MainPageRoot.Loaded += async (s, e) => await CheckUseState();
-        }
-    }
-
-    private async Task CheckUseState()
-    {
-        var isNew = App.LocalConfig.NewUser;
-        if (isNew)
-        {
-            await AgreementDialog.ShowAsync();
-        }
-    }
-
-    private void AgreementDialog_PrimaryButtonClick(ContentDialog sender, ContentDialogButtonClickEventArgs args)
-    {
-        App.LocalConfig.NewUser = false;
-    }
-
-    private void AgreementDialog_CloseButtonClick(ContentDialog sender, ContentDialogButtonClickEventArgs args)
-    {
-        Process.GetCurrentProcess().Kill();
     }
 
     private async void MenuFlyoutItem_Click(object sender, Microsoft.UI.Xaml.RoutedEventArgs e)
