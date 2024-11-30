@@ -111,4 +111,8 @@ public sealed partial class ShellPage : Page
 
         args.Handled = result;
     }
+
+    private void StackPanel_Tapped(object sender, TappedRoutedEventArgs e)
+    {
+    }
 }

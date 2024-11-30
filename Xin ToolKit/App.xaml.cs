@@ -1,7 +1,9 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.UI.Xaml;
+
 using WinUIEx;
+
 using Xin_ToolKit.Activation;
 using Xin_ToolKit.Contracts.Services;
 using Xin_ToolKit.Core.Contracts.Services;
@@ -73,6 +75,8 @@ public partial class App : Application
             services.AddSingleton<IFileService, FileService>();
 
             // Views and ViewModels
+            services.AddTransient<UserViewModel>();
+            services.AddTransient<UserPage>();
             services.AddTransient<PluginViewModel>();
             services.AddTransient<PluginPage>();
             services.AddTransient<SettingsViewModel>();

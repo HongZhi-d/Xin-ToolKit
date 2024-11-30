@@ -205,4 +205,7 @@
 作者努力确保软件更新的兼容性，但您理解并同意，更新可能不总是与旧版本的软件或第三方软件兼容。作者不保证对旧版本软件的持续支持或更新。
 &lt;br/&gt;</value>
   </data>
+  <data name="Shell_User.Content" xml:space="preserve">
+    <value>账户</value>
+  </data>
 </root>
